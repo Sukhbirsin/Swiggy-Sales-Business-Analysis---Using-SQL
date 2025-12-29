@@ -1,0 +1,34 @@
+Real-Time SWIGGY SALES analysis project in SQL
+
+
+PART 1 : DATA CLEANING & VALIDATION
+
+Step 1 : Once you have the data, there might me a case you see any null/empty values in it. SO your job is to first check whether is there any null value present in you dataset 
+and for that you can use CASE(expression) function to check if there's any null records or not.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Step 2 : DETECH if there is any empty strings or say any blank strings avaliable in your dataset.
+                                       
+-----------------------------------------------------------------------------------------------------------------------------------
+step 3 : CHECK for Duplications Records and If there's any duplicate records present then by using ROWNUMBER() Function delete that records But only who's occurance is more than 1
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+PART 2 : CREATING DIMENSIONAL MODELLING (Star SCHEMA)
+
+
+
+Under this next part we have to normalize our dataset by creating it's dimensional modelling for ex : (dim\_date, dim\_restaurant) and One Fact able, after once we are done with 
+creating all dimensional tables for each, we will then start inserting information to each tables one by one with references using Primary key and Foreign key.
+
+
+
+Why normalizing data? = because it helps us to bring out the data into saturated and more normalized form which in the end helps to analyze it properly, by connecting each tables
+
+information together using joins and star schema with the help of Primary and foreign key.
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
